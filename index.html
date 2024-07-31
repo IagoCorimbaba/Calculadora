@@ -7,10 +7,9 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
     </head>
-
     <body>
         <div class="fundo">
-            <h1>Criado por ...</h1>
+            <h1>Criado por m,jmnmm</h1>
             <div class="Calculadora">
                 <h1>Calculadora</h1>
                 <p id="resultado"></p>
@@ -46,5 +45,34 @@
                 </table>
             </div>
         </div>
+        <script>
+            function insert (num)
+            {
+                var numero = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML=numero+num;
+            
+            }
+            function clean ()
+            {
+                document.getElementById('resultado').innerHTML="";
+            }
+            function back ()
+            {
+                var resultado = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML=resultado.substring
+            }
+            function calcular ()
+            {
+                var resultado = document.getElementById('resultado').innerHTML;
+                if (resultado)
+                {
+                    document.getElementById('resultado').innerHTML = eval(resultado);
+                }
+                else
+                {
+                    document.getElementById('resultado').innerHTML = "Nada para calcular";
+                }
+            }
+        </script>
     </body>
 </html>
